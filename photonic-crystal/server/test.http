@@ -1,0 +1,12 @@
+POST http://localhost:1323 HTTP/1.1
+Accept: text/plain
+Content-Type: application/json
+
+{
+    "n1": 1.54,
+    "n2": 1.0008,
+    "d1": 3.5,
+    "d2": 1.2,
+    "th": 18,
+    "n": 11
+}

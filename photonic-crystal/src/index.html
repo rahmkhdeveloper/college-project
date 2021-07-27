@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+  <!-- Title of the project -->
+  <title>Transmitivity of 1-Dimensional Photonic Crystal</title>
+  <!-- main css-->
+  <link rel="stylesheet" href="index.css">
+  <!-- bulma import -->
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+  <!-- AXIOS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- ChartJS -->
+  <script type="text/javascript" src="../node_modules/chart.js/dist/chart.js"></script>
+  <script type="text/javascript" defer src="scripts/render.js"></script>
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <div class='rows'>
+            <div class="row is-full">
+              <span class="uppercase">set input values</span>
+            </div>
+            <br />
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  n1
+                </div>
+                <div class="column">
+                  <input type="number" id="n1"/>
+                </div>
+              </div>
+            </div>
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  n2
+                </div>
+                <div class="column">
+                  <input type="number" id="n2"/>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  d1
+                </div>
+                <div class="column spacing">
+                  <input type="number" id="d1"/>
+                </div>
+              </div>
+            </div>
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  d2
+                </div>
+                <div class="column spacing">
+                  <input type="number" id="d2"/>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  &theta;
+                </div>
+                <div class="column">
+                  <input type="number" id="th"/>
+                </div>
+              </div>
+            </div>
+            <div class='row is-full'>
+              <div class="columns">
+                <div class="column has-text-link has-text-weight-medium">
+                  N
+                </div>
+                <div class="column">
+                  <input type="number" id="n"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <button class="button is-info" id="plot" title="plot the chart">📈PLOT</button>&nbsp;
+          <button class="button is-danger is-light" id="clear" title="clear">✖</button>
+        </div>
+        <div class="column is-9">
+          <canvas id="myChart" width="450" height="350"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
